@@ -52,12 +52,21 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap");
+
+:root{
+  /* Brand Color */
+  --primaryColor:#F47417;
+  --secondaryColor:#00874F;
+  --darkColor:#333;
+  --darkerColor:#2c2c2c;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Lato";
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
 }
 
@@ -140,7 +149,7 @@ p:last-child {
 /*default-btn&optional-btn*/
 .default-btn {
   display: inline-block;
-  border: 1px solid #F47417;
+  border: 1px solid var(--primaryColor);
   padding: 10px 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -153,8 +162,8 @@ p:last-child {
 
 .default-btn:hover {
   background-color: transparent;
-  color: #000000;
-  border-color: #000000;
+  color: #000;
+  border-color: var(--primaryColor);
 }
 
 .optional-btn {
@@ -728,6 +737,9 @@ Navbar CSS
 .xton-nav .navbar .navbar-nav {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 .xton-nav .navbar .navbar-nav .nav-item {
@@ -1125,12 +1137,14 @@ Navbar CSS
 }
 
 .xton-nav .navbar .others-option .option-item {
-  display: inline-block;
+  display: inline-flex;
   margin-left: 15px;
   position: relative;
   z-index: 3;
 }
-
+.option-item:nth-child(1){
+  top: -3PX;
+}
 .xton-nav .navbar .others-option .option-item:first-child {
   margin-left: 0;
 }
@@ -1573,49 +1587,24 @@ Search Overlay CSS
 Main Banner CSS
 =================================================*/
 .main-banner {
-  height: 800px;
+  height: 600px;
   position: relative;
   z-index: 1;
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  max-height: 600px;
 }
 
 .banner-bg1 {
-  background-image: url(../../assets/images/banners/banner-1.jpg);
+  background-image: url(../../assets/images/banners/Banner-1.png);
 }
 
 .banner-bg2 {
-  background-image: url(../../assets/images/main-banner2.jpg);
+  background-image: url(../../assets/images/banners/Banner-2.png);
 }
 
-.banner-bg3 {
-  background-image: url(../../assets/images/main-banner3.jpg);
-}
 
-.banner-bg4 {
-  background-image: url(../../assets/images/offer-bg.jpg);
-}
-
-.banner-bg5 {
-  background-image: url(../../assets/images/main-banner5.jpg);
-}
-
-.banner-bg6 {
-  background-image: url(../../assets/images/main-banner6.jpg);
-}
-
-.banner-bg7 {
-  background-image: url(../../assets/images/main-banner2.jpg);
-}
-
-.banner-bg8 {
-  background-image: url(../../assets/images/main-banner2.jpg);
-}
-
-.banner-bg9 {
-  background-image: url(../../assets/images/main-banner2.jpg);
-}
 
 .banner-section {
   height: 650px;
@@ -1672,9 +1661,9 @@ Main Banner CSS
 }
 
 .main-banner-content.text-white .btn-box .default-btn {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
+  background-color: #0ff;
+  color: var(--primaryColor);
+  border-color: #0ff;
 }
 
 .main-banner-content.text-white .btn-box .default-btn:hover {
@@ -2249,7 +2238,7 @@ About CSS
 Categories Banner CSS
 =================================================*/
 .single-categories-box {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   overflow: hidden;
   border-radius: 5px;
   position: relative;
@@ -4927,12 +4916,10 @@ Offer CSS
 }
 
 .offer-area.bg-image1 {
-  background-image: url(../../assets/images/offer-bg.jpg);
+  background-image: url(../../assets/images/banners/banner-4.jpg);
+  background-position: 50% 100%;
 }
 
-.offer-area.bg-image2 {
-  background-image: url(../../assets/images/offer-bg2.jpg);
-}
 
 .offer-content {
   max-width: 550px;

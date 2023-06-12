@@ -1,0 +1,99 @@
+.others-option .option-item{
+    position: relative;
+}
+.others-option .option-item .container {
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    /* width: 300px; */
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+.container .title {
+    margin: 0;
+}
+.container .subtitle {
+    /* display: inline-block; */
+    /* margin: 5px 0 20px; */
+    opacity: 0.8;
+    
+}
+.container .header {
+    /* color: #fff; */
+    flex-grow: 1; /* Eklenen stil */
+    /* padding: 30px 20px; */
+
+}
+.container .header input {
+    border:2px solid #f0a10fca;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #f0a10fca !important;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 100%;
+}
+.container .header input:focus {
+    outline: none;
+}
+.container .user-list {
+    /* background-color: #fff; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10000;
+}
+.container .user-list li {
+    display: flex;
+    padding: 20px;
+}
+.container .user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+.container .user-list .user-info {
+    margin-left: 10px;
+}
+.container .user-list .user-info h4 {
+    margin: 0 0 10px;
+}
+.container .user-list .user-info p {
+    font-size: 12px;
+}
+.container .user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+.container .user-list.hide {
+    display: none;
+}
+
+
+.user-list {
+    position: absolute;
+    top: calc(100% + -1px);
+    left: 12px;
+    width: 460px;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10000;
+    border:2px solid #f0a10fca;
+    /* border-radius: 5px; */
+    scrollbar-width: none; /* Firefox için */
+    -ms-overflow-style: none; /* IE/Edge için */
+  }
+  
+.user-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari için */
+  }
+  
+  
