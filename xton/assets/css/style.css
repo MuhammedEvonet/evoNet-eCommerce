@@ -652,6 +652,13 @@ Top Header CSS
 /*================================================
 Navbar CSS
 =================================================*/
+.navbar-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 .navbar-area .navbar-brand .white-logo {
   display: none;
 }
@@ -1143,7 +1150,7 @@ Navbar CSS
   z-index: 3;
 }
 .option-item:nth-child(1){
-  top: -3PX;
+  top: -4PX;
 }
 .xton-nav .navbar .others-option .option-item:first-child {
   margin-left: 0;
@@ -2237,11 +2244,82 @@ About CSS
 /*================================================
 Categories Banner CSS
 =================================================*/
+.container-fluid .row {
+  overflow-x: auto;
+  gap: 45px;
+  justify-content: center;
+}
+.itemslider {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.itemslider::-webkit-scrollbar {
+  display: none;
+}
+
+.itemslider .itemslide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+.itemslider .item {
+  margin-right: 10px;
+}
+
+.itemslider .item:last-child {
+  margin-right: 0;
+}
+
+.ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ctrl-btn {
+  padding: 20px 20px;
+  min-width: 50px;
+  background: #fff;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+  left: 0;
+}
+
+.ctrl-btn.pro-next {
+  right: 0;
+}
+
+.categories-banner-area span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+
 .single-categories-box {
   /* margin-bottom: 30px; */
   overflow: hidden;
   border-radius: 5px;
   position: relative;
+
 }
 
 .single-categories-box img {
@@ -2454,9 +2532,23 @@ Products CSS
   padding-bottom: 30px;
 }
 
+.products-area{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.products-area .container .mini{
+  gap: 8%;  /*response da ufak bi aralıkta, yldızlar üst üste geliyor*/
+}
+
 .single-products-box {
+  margin-top: 10px;
   position: relative;
   margin-bottom: 30px;
+}
+
+.single-products-box:hover {
+  box-sizing: content-box;
+  box-shadow: 0px 0px 6px 2px #6b47472c; 
 }
 
 .single-products-box .products-image {

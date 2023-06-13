@@ -23,6 +23,12 @@
     /* color: #fff; */
     flex-grow: 1; /* Eklenen stil */
     /* padding: 30px 20px; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
 
 }
 .container .header input {
