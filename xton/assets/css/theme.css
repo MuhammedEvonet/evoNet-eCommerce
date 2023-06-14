@@ -8125,15 +8125,19 @@ footer a:hover {
 /************************************************************************************************
  MODULE CATEGORY SLIDER
  *************************************************************************************************/
-.container-slider .item-sub-cat ul li a {
+.container-slider .item-sub-cat ul  {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40vh;
+}
+.container-slider .item-sub-cat ul li {
   font-size: 14px;
   color: #666;
   font-weight: 500;
   line-height: 25px;
-  padding-top: 12px;
-  padding-left: 25px;
-  padding-right: auto; }
-  .container-slider .item-sub-cat ul li a:hover {
+  cursor: pointer;
+ }
+  .container-slider .item-sub-cat ul li:hover {
     color: #ff5e00;
     font-weight: 500; }
 

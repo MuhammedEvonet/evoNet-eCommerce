@@ -1,0 +1,67 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#itemslider {
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 86%;
+  }
+#itemslide .card{
+  position: relative;
+  /* kartların bouyu için: */
+  max-width: 320px !important; 
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#itemslide .card::before{
+  content: "";
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  background: #F47417;
+  border-radius: 20px 20px 0 0;
+}
+
+#itemslide .card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  position: relative;
+  z-index: 100;
+}
+  
+#itemslide section .card .image img{
+  height: 100%;
+  width:  100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.swiper-pagination{
+  position: absolute;
+  display: none;
+}
+
+#itemslide .swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #F47417;
+
+}
+
+#itemslide .swiper-button-next, .swiper-button-prev{
+  display: block;
+  opacity: 0.5;
+  color: #F47417 !important;
+  transition: all 0.3s ease;
+}
+#itemslide .swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #000;
+}
