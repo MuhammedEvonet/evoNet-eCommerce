@@ -102,4 +102,36 @@
     display: none; /* Chrome, Safari için */
   }
   
-  
+@media only screen and (min-width: 1025px) {
+    .container .header {
+        /* color: #fff; */
+        flex-grow: 1; /* Eklenen stil */
+        /* padding: 30px 20px; */
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 100;
+    
+    }
+
+    .xton-nav{
+        width: auto;
+    }
+    .xton-nav .navbar-collapse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        max-width: 1195px;
+        min-width:970px ;
+    }
+    .mean-menu {
+        display: flex;
+        justify-content: space-around;
+        width: 1000px;
+    }
+    .xton-nav .navbar .others-option{
+    }
+}

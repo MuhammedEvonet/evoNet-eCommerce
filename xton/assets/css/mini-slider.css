@@ -8,6 +8,9 @@
     justify-content: center;
     max-width: 86%;
   }
+.swiper{
+  width: 66%;
+}
 #itemslide .card{
   position: relative;
   /* kartların bouyu için: */
@@ -64,4 +67,52 @@
 #itemslide .swiper-button-next:hover, .swiper-button-prev:hover{
   opacity: 1;
   color: #000;
+}
+
+@media only screen and (max-width: 1025px) {
+  #itemslider {
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 92%;
+  }
+  #itemslider{
+    display: block;
+  }
+  .swiper{
+    width: 86%;
+  }
+  #itemslide .card{
+    position: relative;
+    /* kartların bouyu için: */
+    width: 280px !important; 
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #itemslider {
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 92%;
+  }
+  #itemslider{
+    display: block;
+  }
+  .swiper{
+    width: 86%;
+  }
+  #itemslide .card{
+    position: relative;
+    /* kartların bouyu için: */
+    width: 280px !important; 
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
 }

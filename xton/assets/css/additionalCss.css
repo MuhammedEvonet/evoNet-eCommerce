@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1201px) {
+    .xton-nav .container{
+        margin: 0 !important;
+    }
+    .products-area .container .mini{
+        gap:11%;  /*response da ufak bi aralıkta, yldızlar üst üste geliyor*/
+    }
+    .xton-nav .navbar {
+        margin-left: 15px ;
+    }
+    .xton-nav .navbar .navbar-nav{
+        margin-left: 40px ;
+    }
+    .xton-nav .navbar .navbar-nav .nav-item a{
+        font-size: 14.5px;
+        font-weight: 400;
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+
+
+
+    .static-cates ul {
+        display: grid;
+        grid-template-columns: repeat(3,3fr);
+    }
+    .static-cates ul {
+        margin: 0 -15px; 
+    }
+    .static-cates ul li {
+        margin-bottom: 16px;
+        float: left;
+        width: auto !important;;
+    }
+    
+
+
+    .offer-area{display: none;}
+}
+
+@media only screen and (min-width: 1025px ) and ( max-width:1201px) {
+    
+    .xton-nav .collapse {
+        display: flex;
+        justify-content: center;
+        margin-left: 6%;
+      }
+
+      .single-products-box .products-content h3 a{
+        font-size: 16px;
+        font-weight: 500;
+      }
+}
