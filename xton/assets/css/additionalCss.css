@@ -36,6 +36,14 @@
 
 
     .offer-area{display: none;}
+
+    .home-slides.owl-theme .owl-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 210px;
+      }
+
 }
 
 @media only screen and (min-width: 1025px ) and ( max-width:1201px) {
@@ -43,11 +51,196 @@
     .xton-nav .collapse {
         display: flex;
         justify-content: center;
-        margin-left: 6%;
+        /* margin-left: 6%; */
+        margin: 0;
+        padding: 0;
       }
 
       .single-products-box .products-content h3 a{
         font-size: 16px;
         font-weight: 500;
       }
+      #itemslider{
+        margin-top: -120px;
+      }
+}
+
+@media only screen and (max-width: 1025px ){
+    .home-slides{
+        display: none !important;
+    }
+    #itemslider{
+        margin-top: 130px;
+      }
+    .home-boxes{
+        display: flex !important;
+    }
+    .categories-banner-area .container-fluid{
+        gap: 45px;
+        justify-content: center;
+    }
+
+    .main-container #content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1024px;
+        min-height: 100vh;
+        margin: 0;
+        left: 0;
+      }
+      /* süpermarket tema csslerinden theme.css içindeki .main-container #content bazı cssler kapatıldı. */
+}
+
+@media only screen and (min-width: 768px ) and ( max-width:1025px) {
+   
+    .products-area .mini{
+        display: grid;
+        grid-template-columns:  repeat(3, 3fr);
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        height: auto;
+        margin-bottom: 24%;
+    }
+    .single-products-box{
+        width: max-content;
+    }
+    .single-products-box:hover {
+        box-sizing: content-box;
+        box-shadow: 0px 0px 6px 2px #6b47472c;
+    }
+    .products-area .products-image{
+        width: 160px;
+        height:160px;
+    }
+    .products-content{
+        justify-content: center;
+        width: 200px;
+        left: 0;
+    }
+    .products-content h3 a{ 
+        font-size: 14px;
+        letter-spacing: .1em;
+        text-align: center;
+    }
+    .single-products-box .products-image .products-button ul{
+        position: absolute;
+        left: 100%;
+        z-index: 1;
+    }
+
+    .static-cates ul li {
+        margin-bottom: 16px;
+        padding: 0 15px;
+        float: left;
+        width: auto !important;
+    }
+
+    .main-container{
+
+    }
+    .item-cat-image{
+        display: none;
+    }
+}
+@media only screen and (max-width: 990px ){
+    .products-area .med {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 780px;
+        width: min-content;
+    }
+    .med .col-lg-4 {
+        width: 240px !important;
+    }
+
+    
+    .so-category-slider{
+        
+        display: inline-flex;
+        justify-content: space-between;
+    } .container-slider
+    {
+        width: 100%;
+    }
+    .category-slider-inner .item{
+        width: 260px; 
+    }
+    .item .item-inner{
+        max-width: 260px;
+    }
+    .owl2-item{
+        max-width: 240px;
+    }
+
+
+
+    .banners4.banners .row{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-row-gap: 45px;
+    }
+    .banners4.banners .row .col-lg-6 {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px ){
+
+}
+
+@media only screen and (max-width: 480px ){
+ .Supermaket{
+    display: none;
+ }   
+ .navbar-area{
+    margin: 0;
+    padding: 0;
+    max-width: 480px !important;
+    position: absolute;
+ }
+
+
+ .meanmenu-reveal{
+    margin-top: 8px;
+ }
+
+
+ .products-area  .med{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+ }
+ .products-area  .mini .single-products-box{
+    width: 290px;
+    margin: 0;
+    padding: 0;
+ }
+ .products-area  .med .single-products-box{
+    width: 360px;
+    margin: 0; 
+    padding: 0;
+ }
+
+
+
+ .partner-area .section-title h2{
+    font-size: 16px;
+    font-weight: 400;
+ }
+ .partner-area .owl-stage{
+    display: inline-flex;
+    gap: 25px;
+}
+
+.switch-box {
+    position: fixed;
+    z-index: 1;
+    left: 3%;
+    bottom: 63px;
+  }
 }

@@ -116,3 +116,34 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
+
+@media only screen and (max-width: 480px ){
+  #itemslider {
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 69%;
+  }
+  #itemslide .swiper-button-next, .swiper-button-prev{
+    display: none !important;
+  }
+  #itemslide .card{
+    position: relative;
+    /* kartların bouyu için: */
+    width: 240px !important; 
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+#itemslider {
+  -webkit-transition-timing-function:linear!important;
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
