@@ -44,15 +44,7 @@
 .container .header input:focus {
     outline: none;
 }
-.container .user-list {
-    /* background-color: #fff; */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    max-height: 400px;
-    overflow-y: auto;
-    z-index: 10000;
-}
+
 .container .user-list li {
     display: flex;
     padding: 20px;
@@ -89,7 +81,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    max-height: 400px;
+    max-height: 450px;
     overflow-y: auto;
     z-index: 10000;
     border:2px solid #f0a10fca;
@@ -133,5 +125,25 @@
         width: 1000px;
     }
     .xton-nav .navbar .others-option{
+    }
+}
+
+@media only screen and (max-width: 480px ){
+
+    
+  .mobilesearch{
+    display: grid !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+    .others-option .option-item .container{
+        position: relative;
+    }
+    .user-list{
+        
+    }
+    .categories-banner-area{
+        position: relative;
+        top: -66px;
     }
 }

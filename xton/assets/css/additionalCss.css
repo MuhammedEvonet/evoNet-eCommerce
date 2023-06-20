@@ -1,3 +1,13 @@
+@media only screen and (min-width: 1440px) {
+    .main-banner {
+        height: 750px;
+        position: relative;
+        z-index: 1;
+        background-position: top center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+}
 @media only screen and (max-width: 1201px) {
     .xton-nav .container{
         margin: 0 !important;
@@ -80,7 +90,7 @@
         justify-content: center;
     }
 
-    .main-container #content{
+    .Supermaket{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -190,7 +200,9 @@
 }
 
 @media only screen and (max-width: 768px ){
-
+    .xton-responsive-nav {
+        display:    "";
+      }
 }
 
 @media only screen and (max-width: 480px ){
@@ -212,6 +224,7 @@
 
  .products-area  .med{
     display: grid;
+    -ms-grid-column-align: center;
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%;
  }
@@ -243,4 +256,41 @@
     left: 3%;
     bottom: 63px;
   }
+
+
+  .collectionbox{
+    display: table !important;
+  }
+
+  .collectionbox{
+    margin-top: 66px;
+    }
+
+
+ .top-header{
+    display: block !important;
+ }
+
+ .navbar-area{
+    display: none !important;
+ }
+ 
+ .products-area .med{
+    min-width: 360px;
+    width: min-content;
+ }
+ .products-area  .med .single-products-box{
+    margin: 0; 
+    padding: 35px;
+ }
+ .single-products-box:hover {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px 2px #6b47472c;
+}
+ 
+}
+@media only screen and (min-width: 240px ){
+    .mobile-ct-banner-area{
+        display: flex !important;
+      }
 }

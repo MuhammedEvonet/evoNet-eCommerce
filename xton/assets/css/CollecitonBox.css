@@ -1,0 +1,164 @@
+.banners-effect-11 .banners > div a {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .banners-effect-11 .banners > div a:hover:before, .banners-effect-11 .banners > div a:hover:after {
+    width: 100%;
+    height: 100%; }
+  .banners-effect-11 .banners > div a:before, .banners-effect-11 .banners > div a:after {
+    background-color: rgba(0, 0, 0, 0.15);
+    content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    width: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+  .banners-effect-11 .banners > div a:after {
+    left: auto;
+    right: 0;
+    bottom: 0; }
+
+    
+
+    
+#wrapper {
+  overflow: hidden; }
+
+
+  #content {
+      margin-bottom: 30px; }
+      #content:before, #content:after {
+        content: " ";
+        display: table; }
+      #content:after {
+        clear: both; }
+
+        
+        .module {
+          margin-bottom: 30px; }
+          .module h3.modtitle {
+            margin: 0  0 15px;
+            text-transform: capitalize;
+            font-weight: bold; }
+
+            
+.no-margin {
+  margin: 0 !important; }
+
+  
+.titleLine h3.modtitle {
+  /* [4] */
+  /* [6] */
+  /* [6] */
+  /* [7] */
+  font-size: 16px;
+  /* [8] */
+  font-size: 1.6rem;
+  /* [8] */
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 30px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  position: relative; }
+  .titleLine h3.modtitle:after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: #F4A137;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px; }
+
+    
+    .module {
+      margin-bottom: 30px; }
+      .module h3.modtitle {
+        margin: 0  0 15px;
+        text-transform: capitalize;
+        font-weight: bold; }
+
+        .modLine .modcontent {
+          display: table-cell;
+          padding: 0 15px; }
+
+          
+          .clearfix {
+              clear: both; }
+
+              #collections_block{
+              list-style: none;
+              padding: 0; }
+
+              #collections_block h3.modtitle {
+                  display: block;
+                  padding-top: 0;
+                  margin-bottom: 20px; }
+
+                  #collections_block ul {
+                      margin: 5px -5px;
+                      display: table; }
+                      #collections_block ul li {
+                        padding: 0 5px;
+                        font-size: 14px;
+                        color: #666666;
+                        text-align: center;
+                        width: 200px;
+                        text-transform: uppercase;
+                        display: table-cell; }
+                        #collections_block ul li .color_co {
+                          background-color: #EEEEEE;
+                          background-position: center;
+                          overflow: hidden;
+                          border-color: white;
+                          border: 1px solid white; }
+                          #collections_block ul li .color_co a {
+                            float: left;
+                            font-weight: bold;
+                            width: 100%;
+                            height: 126px;
+                            text-decoration: none;
+                            line-height: 22px;
+                            padding: 10px;
+                            color: #999;
+                            border-bottom: 3px solid #F4A137;
+                            background-position: center center;
+                            background-repeat: no-repeat; }
+                          #collections_block ul li .color_co:hover {
+                            border-color: #F4A137;
+                            background: transparent; }
+                        #collections_block ul li.collection_0 a {
+                          background-image: url("/xton/assets/images/collectionBox/collections-1-1.png"); }
+                        #collections_block ul li.collection_1 a {
+                          background-image: url("/xton/assets/images/collectionBox/collections-2-1.png"); }
+                        #collections_block ul li.collection_2 a {
+                          background-image: url("/xton/assets/images/collectionBox/collections-3-1.png"); }
+                        #collections_block ul li.collection_3 a {
+                          background-image: url("/xton/assets/images/collectionBox/collections-4-1.png"); }
+                        #collections_block ul li.collection_4 a {
+                          background-image: url("/xton/assets/images/collectionBox/collections-5-1.png"); }
+                        #collections_block ul li.collection_5 a {
+                          background-image: url("/xton/assets/images/collectionBox/collections-6-1.png"); }
+                    
+
+                          .module.so-categories .wrap-categories {
+                            margin: 0; }
+                        
+                          .content-aside {
+                            padding: 0; }
+                            .content-aside .module {
+                              width: 45%;
+                              margin: 0 2% 30px;
+                              display: inline-block;
+                            float:left;
+                              vertical-align: top; }
+
+                              #collections_block ul li {
+                                display: inline-block;
+                                width: 49%; }
+                                #collections_block ul li {
+                                  display: inline-block;
+                                  width: 33%; }                            

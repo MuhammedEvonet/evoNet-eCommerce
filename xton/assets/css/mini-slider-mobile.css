@@ -1,7 +1,11 @@
 /* === Google Font Import - Poppins === */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-.mobile-psa{display: none;}
-#itemslider {
+
+.mobile-ct-banner-area {
+    position: relative;  
+    display: none !important;
+  }
+  .mobile-ct-banner-area #itemslider {
     position: relative;  
     display: flex;
     align-items: center;
@@ -9,7 +13,7 @@
     max-width: 86%;
   }
 .swiper{
-  width: 66%;
+  width: 36%;
 }
 #itemslide .card{
   position: relative;
@@ -70,14 +74,14 @@
 }
 
 @media only screen and (max-width: 1025px) {
-  #itemslider {
+  .mobile-ct-banner-area {
     position: relative;  
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 92%;
   }
-  #itemslider{
+  .mobile-ct-banner-area{
     display: block;
   }
   .swiper{
@@ -94,14 +98,14 @@
 }
 
 @media only screen and (min-width: 1025px) {
-  #itemslider {
+  .mobile-ct-banner-area {
     position: relative;  
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 92%;
   }
-  #itemslider{
+  .mobile-ct-banner-area{
     display: block;
   }
   .swiper{
@@ -118,28 +122,12 @@
 }
 
 @media only screen and (max-width: 480px ){
- 
-  .swiper{
-    width: 52%;
+  .mobile-ct-banner-area {
+    display: none !important;
   }
-
-  .mobile-psa{
-    display: flex;
-    box-shadow: none !important;
-  }
-  #itemslide .card{
-    border: none !important;
-    box-shadow: none !important;
-  }
-
-  .categories-banner-area .section-title{
-    display: block;
-    height: 0;
-  }
-
 }
 
-#itemslider {
+.mobile-ct-banner-area {
   -webkit-transition-timing-function:linear!important;
   -o-transition-timing-function:linear!important;
   transition-timing-function:linear!important;
