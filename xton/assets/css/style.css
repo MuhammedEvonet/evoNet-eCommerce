@@ -7791,6 +7791,9 @@ Gallery CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.gallery-6 img{
+  height: 300px !important;
+}
 
 .single-gallery-item .popup-btn {
   position: absolute;
