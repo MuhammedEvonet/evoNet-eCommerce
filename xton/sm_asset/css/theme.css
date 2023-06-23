@@ -7527,7 +7527,7 @@ footer a:hover {
 .static-cates {
   margin-bottom: 45px;
   display: inline-block;
-  padding-inline-start: 35px;
+  /* padding-inline-start: 35px; */
 }
   .static-cates ul {
     margin: 0 -15px; 
@@ -7536,6 +7536,7 @@ footer a:hover {
     padding: 0 35px;
     float: left;
     width: 20%; }
+    
   .static-cates ul li a {
     display: block;
     position: relative; }
